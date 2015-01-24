@@ -1,13 +1,24 @@
 /* Main */
 
+/* Bluesat logo on menu bar */
+img.top-bar-img {
+    float: left; 
+}
+
+
+
 .top-bar-img {
-	height: 45px;
+	/* height: 45px; */
+	max-height: 45px;
 }
 
 .fixed-top {
 	background-image: url('img/satellite_img.jpg');
 	background-attachment: fixed;
-	background-size: 100%;	
+	background-size: 100%;
+	background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 	height: 650px;
 	width: 100%;
 }
@@ -161,6 +172,26 @@ h1 {
 	color: white;
 }
 
+/* In top-bar expanded, title-area, any li with a class of name */
+/* Background of menu top-bar when mobile view, and menu is expanded */
+.top-bar.expanded .title-area li.name {
+    background:black;
+}
+
+/* Menu buttons */
+section.top-bar-section { 
+   opacity: 0;
+   margin-top: -50;
+}
+
+/* 768 is the threshold width of window for mobile view */
+@media only screen and (max-width: 40.063em) {
+   section.top-bar-section { 
+       opacity: 1 !important;
+       margin-top: 0 !important;
+   }
+}
+
 @media only screen and (min-width: 40.063em) {
   .top-bar-section ul.center {
     display: table;
@@ -195,7 +226,7 @@ h1 {
 footer {
   margin-top: 30px;
   width: 100%;
-  background: #3d3d3d;
+  background: black;
   padding-top: 15px;
   padding-bottom: 15px;
 }

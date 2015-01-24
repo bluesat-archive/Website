@@ -3,6 +3,8 @@ $(document).foundation();
 $("a[href^='#']").on('click', function(e) {
    e.preventDefault();
    var hash = this.hash;
+   if (hash == "") { return; }
+   console.log("passed");
    $('html, body').animate({
        scrollTop: $(this.hash).offset().top - $('nav').height() + 1
      }, 500, function(){
@@ -83,26 +85,38 @@ $(window).scroll(function() {
   }
 });
 
-$("section.top-bar-section").css("opacity", 0);
-$("section.top-bar-section").css("margin-top", -50)
-
 $(window).scroll(function(){
 
   var curTop = $(document).scrollTop()
   var curOpacity = $("section.top-bar-section").css("opacity");
   
   if (curTop > 0 && curOpacity == 0) {
-
-    $("section.top-bar-section").animate({
-      "opacity": "1",
-   "margin-top": "0",
+	$("section.top-bar-section").animate({
+		"opacity": "1",
+        "margin-top": "0",
     }, 1000, function() {
-      // Animation complete.
+		// Animation complete.
     });
-
-
-  }
-
-
+	}
 });
 
+$(window).resize(function() {
+	resizeWindow();
+});
+
+function resizeWindow() {
+	var _w = 960;
+	var _h = 639;
+	var winWidth = $(window).width();
+	var imgHeight = (_h/_w) * winWidth;
+return;
+	$(".fixed-top").css("height", imgHeight - 50);
+	$(".fixed-top .row").css("height", imgHeight - 50);
+	$("#fixed-top-text").css("margin-top", (imgHeight - 50)*0.4);
+	$("#fixed-top-text h1").css("font-size", 30+23*(imgHeight/700));
+	
+}
+
+$(document).ready(function () {
+	resizeWindow();
+});
