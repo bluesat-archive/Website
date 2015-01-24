@@ -83,3 +83,26 @@ $(window).scroll(function() {
   }
 });
 
+$("section.top-bar-section").css("opacity", 0);
+$("section.top-bar-section").css("margin-top", -50)
+
+$(window).scroll(function(){
+
+  var curTop = $(document).scrollTop()
+  var curOpacity = $("section.top-bar-section").css("opacity");
+  
+  if (curTop > 0 && curOpacity == 0) {
+
+    $("section.top-bar-section").animate({
+      "opacity": "1",
+   "margin-top": "0",
+    }, 1000, function() {
+      // Animation complete.
+    });
+
+
+  }
+
+
+});
+
