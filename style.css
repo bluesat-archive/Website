@@ -13,7 +13,7 @@ img.top-bar-img {
 }
 
 .fixed-top {
-	background-image: url('img/satellite_img.jpg');
+	background-image: url('img/bg.png');
 	background-attachment: fixed;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -21,6 +21,7 @@ background-size: cover;
 background-position: center center;
 	height: 650px;
 	width: 100%;
+	margin-top: -10px;
 }
 
 .fixed-top p {
@@ -31,6 +32,7 @@ background-position: center center;
 	color: white;
 	
 	text-transform: uppercase;
+	text-shadow: 0px 0px 1px #000;
 }
 
 .fixed-top-header {
@@ -145,7 +147,7 @@ h1 {
 }
 
 .top-bar-section ul li {
-	background: #444;
+	background: #000000;
 	color: white;
 }
 
@@ -157,18 +159,18 @@ h1 {
 	/*background: #444;*/
 	/*background: rgba(39, 44, 47, 1);*/
     background: black;
-	color: rgba(0, 182, 255, 1);
+	color: #00B6FF;
 }
 
 /* active */
 .top-bar-section li.active:not(.has-form) a:not(.button) { 
 	/*background: #1F7EB9;*/
-	background: rgba(0, 115, 165, 1);
+	background: #0073A5;
 	opacity: 1.0;
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover { 
-	background: rgba(27, 154, 203, 1);
+	background: #1B9ACB;
 	color: white;
 }
 
@@ -233,7 +235,7 @@ footer {
 
 footer * {
   text-align: center;
-  color: #f4f4f4;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -248,7 +250,7 @@ footer i.fi-mail, footer i.fi-social-facebook {
 .has-tip {
   border-bottom: none;
   font-weight: normal;
-  color: #f4f4f4;
+  color: #FFFFFF;
   font-size: 5em;
 }
 
