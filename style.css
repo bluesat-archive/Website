@@ -141,6 +141,12 @@ h1 {
   background-repeat: no-repeat;
 }
 
+/* Body div, containing text */
+.small-12 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .top-bar {
 	/*background: rgba(39,44,47,1);*/
     background:black;
