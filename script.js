@@ -37,15 +37,26 @@ $(document).ready(function () {
         document.title = 'Satellites · BLUEsat'; 
       }
   }, {offset: navheight});
-    $('#team').waypoint(function(direction) {
+    $('#stratospheric').waypoint(function(direction) {
       if (direction == 'down') {
         $('#hrobot').removeClass('active');
+        $('#hstratospheric').addClass('active');
+        document.title = 'Stratospheric Testing · BLUEsat';
+      } else {
+        $('#hstratospheric').removeClass('active');
+        $('#hrobot').addClass('active');
+        document.title = 'Robotics · BLUEsat'; 
+      }
+  }, {offset: navheight});
+   $('#team').waypoint(function(direction) {
+      if (direction == 'down') {
+        $('#hstratospheric').removeClass('active');
         $('#hteam').addClass('active');
         document.title = 'Team · BLUEsat';
       } else {
         $('#hteam').removeClass('active');
-        $('#hrobot').addClass('active');
-        document.title = 'Robotics · BLUEsat'; 
+        $('#hstratospheric').addClass('active');
+        document.title = 'Stratospheric Testing · BLUEsat'; 
       }
   }, {offset: navheight});
     $('#sponsors').waypoint(function(direction) {

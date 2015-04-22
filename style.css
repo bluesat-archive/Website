@@ -95,7 +95,7 @@ h1 {
 .robotsmall {
   width: 100%;
   height: 20em;
-  background-image: url('img/robot.jpg');
+  background-image: url('img/rover 2.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -116,10 +116,17 @@ h1 {
 }
 
 #robot {
-  background-image: url('img/robot_cover.jpg');
+  background-image: url('img/robot cad.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
+}
+
+#stratosphere {
+  /* background-image: url('img/robot_cover.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #sponsors {
@@ -200,7 +207,8 @@ section.top-bar-section {
    }
 }
 
-@media only screen and (min-width: 40.063em) {
+/*@media only screen and (min-width: 40.063em) {*/
+@media only screen and (min-width: 60.063em) {
   .top-bar-section ul.center {
     display: table;
     margin: 0 auto;
