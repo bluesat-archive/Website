@@ -1,0 +1,69 @@
+jQuery('body').append('' +
+'<div id=_oss_container style="left: 0 !important; right: auto !important;">' +
+'  <div id=_oss_loading class=_oss_hideme style="float: left !important;"><img src="//static.getclicky.com/media/loading.gif"></div>' +
+'  <div id=_oss_secondary class="_ossbox _oss_hideme" style="float: left !important; clear: left !important;">' +
+'    <div id=_oss_body></div>' +
+'    <div class=_oss_clear></div>' +
+'    <div id=_oss_header></div>' +
+'  </div>' +
+'  <div id=_oss_main class=_ossbox style="float: left !important; clear: left !important;">' +
+'    Loading...' +
+'  </div>' +
+'</div>' +
+''
+);
+
+jQuery('#_oss_main').html('' + 
+	'<div id=_oss_online_site class=_ossitem style="border:0;">' +
+	'  <div class=_ossvalue><a target=_blank href=# onclick="_OSS.secondary(\'online\'); return false;">19</a></div>' +
+	'  <div class=_ossdesc>on site</div>' +
+	'</div>' +
+	
+	'<div id=_oss_online_page class=_ossitem>' +
+	'  <div class=_ossvalue><a target=_blank href=# onclick="_OSS.secondary(\'online_page\'); return false;">0</a></div>' +
+	'  <div class=_ossdesc>on page</div>' +
+	'</div>' +
+	
+	'  <div id=_oss_heatmap class="_ossitem ">' +
+	'    <div class=_ossdesc>' +
+	'      <a href=# onclick="_OSS.secondary(\'heatmap\'); return false;"><img style="padding-top: 5px;" src="//static.getclicky.com/media/icon_heatmap_32.png" title="View heatmap for this page"></a><br>' +
+	'    </div>' +
+	'  </div>' +
+	
+	'  <div class=_ossbranding>' +
+	'    <div class=_oss_fr style="margin-right: -8px;"><a href=# onclick="jQuery(\'#_oss_container\').remove(); return false;" title="Close"><img src="//static.getclicky.com/media/icon_delete_small.png"></a></div>' +
+	'    <a target=_blank href="http://clicky.com/stats/?site_id=100778934"> &nbsp; Clicky Web Analytics</a>' +
+	'  </div>' +
+		'' );
+
+_OSS.site_id = '100778934';
+_OSS.sitekey = 'd86cf337b2d21fc6';
+_OSS.hq = '//clicky.com';
+_OSS.site_header = '<div class=_oss_tabs><a href=# data-report="searches">Searches</a><a href=# data-report="links-domains">Referring domains</a><a href=# data-report="traffic-sources">Traffic sources</a><div style="margin-top:15px; text-align: right;"><a href=# data-report="goals">Goals</a><a href=# data-report="campaigns-groups">Campaigns</a><a class=_oss_current href=# data-report="visitors">Visitors online</a></div></div>';
+_OSS.page_header = '<div class=_oss_tabs><a href=# data-report="searches">Searches</a><a href=# data-report="links-domains">Referring domains</a><a href=# data-report="traffic-sources">Traffic sources</a><div style="margin-top:15px; text-align: right;"><a href=# data-report="goals">Goals</a><a href=# data-report="campaigns-groups">Campaigns</a><a class=_oss_current href=# data-report="visitors">Visitors on this page</a></div></div>';
+_OSS.heatmap_header = '<div class=_oss_tabs><a href=# data-report="searches">Searches</a><a href=# data-report="links-domains">Referring domains</a><a href=# data-report="traffic-sources">Traffic sources</a><div style="margin-top:15px; text-align: right;"><a href=# data-report="goals">Goals</a><a href=# data-report="campaigns-groups">Campaigns</a><a href=# data-report="split-versions">Split tests</a><a href=# data-report="other">More...</a><a class=_oss_current href=# data-report="calendar">Heatmaps</a></div></div>';
+_OSS.heatmap_body = _OSS.heatmap_body_original = '' +
+	'<div id=_oss_footer>Heatmaps &raquo; Date range</div>' +
+	'<a href=# data-heatmapdate="today" class=_oss_current>Today</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="yesterday">Yesterday</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="2-days-ago">2 days ago</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="3-days-ago">3 days ago</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="4-days-ago">4 days ago</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="5-days-ago">5 days ago</a> &nbsp; ' +
+	'<br>' +
+	'<a href=# data-heatmapdate="last-7-days">Last 7 days</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="last-28-days">Last 28 days</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="this-week">This week</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="last-week">Last week</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="2-weeks-ago">2 weeks ago</a> &nbsp; ' +
+	'<br>' +
+	'<a href=# data-heatmapdate="this-month">May 2015</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="last-month">Apr 2015</a> &nbsp; ' +
+	'<a href=# data-heatmapdate="2-months-ago">Mar 2015</a> &nbsp; ' +
+	
+	'<a href=# data-heatmapdate="3-months-ago">Feb 2015</a> &nbsp; ' +
+'<a href=# data-heatmapdate="4-months-ago">Jan 2015</a> &nbsp; ' +
+'<a href=# data-heatmapdate="5-months-ago">Dec 2014</a> &nbsp; ' +
+	'';
+
+
