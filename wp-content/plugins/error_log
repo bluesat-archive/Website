@@ -1,0 +1,1 @@
+[25-Apr-2016 11:05:38 Australia/Sydney] PHP Fatal error:  Call to undefined function add_action() in /home/bluesatc/public_html/wp-content/plugins/hello.php on line 60

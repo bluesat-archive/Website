@@ -1,0 +1,384 @@
+/*
+Theme Name: UNSW Bluesat
+Author: Harry J.E Day
+Author URI: http://bluesat.com.au
+Description: The UNSW Theme
+License: All Rights reserved UNSW Australia, and BLUEsat UNSW
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: unsw
+
+*/
+
+
+@font-face {
+    font-family: 'SommetBold';
+/*     src: url('fonts/SommetBold.eot'); /* IE9 Compat Modes */ 
+    src: url('fonts/SommetBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/SommetBold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/SommetBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1, h2, h3, h4 {
+    font-family: "SommetBold", Arial;
+}
+
+#header { 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+#delimiter { clear: both; }
+#footer, .navbar, .dropdown-menu { 
+    background: #2E2E2E none repeat scroll 0% 0%;
+/*     color: #FFF; */
+    color: #B7B7B7;
+    
+}
+
+#footer h3 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#footer .sponsors img {
+    max-height: 50px;
+    min-height: 50px;
+/*     background: #FFF; */
+    padding: 10px;
+    margin-top: 2px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  margin-top: 0px !important;
+}
+
+main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+
+#footer {
+/*     bottom: 0px; */
+/*     width: 100vw; */
+    padding-top: 30px;
+/*     padding-bottom: 30px; */
+}
+
+a.share-footer {
+    color: #FFF;
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+a.facebook-share-footer {
+    background: transparent url("images/icon-fb.png") no-repeat scroll 0px 0px;
+}
+
+a.linkedin-share-footer {
+    background: transparent url("images/icon-in.png") no-repeat scroll 0px 0px;
+}
+
+a.google-share-footer {
+    background: transparent url("images/icon-google.png") no-repeat scroll 0px 0px;
+}
+
+a.email-share-footer {
+    background: transparent url("images/icon-em.png") no-repeat scroll 0px 0px;
+}
+
+.title { font-size: 11pt; font-family: verdana; font-weight: bold; }
+
+#main .container, #header {
+    background-color: #FFF;
+}
+
+
+
+body {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    font-family: arial;
+    background-color: #F6F6F6;
+    /*stop footer overlaying content*/
+/*     padding-bottom: 70px; */
+}
+
+.UNSWLogo img {
+    box-sizing: content-box;
+}
+
+
+#header img {
+    max-height: 70px;
+}
+
+.banner {
+    text-align: left;
+    border-bottom: 10px solid #FC0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.navbar {
+    border: 0px solid #2E2E2E;
+    border-radius: 0px;
+    border-bottom: 1px solid #262626;
+    height: auto;
+    min-height: 36px;
+    padding: 0px;
+    margin-bottom: 0px;
+}    
+
+
+.nav > li, .nav  a, .navbar-brand {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFF !important;
+}
+
+
+/*active link*/
+.navbar-default .navbar-nav > .active > a {
+    background-image: none !important;
+    background-repeat: repeat-x;
+    background-color: #0E64CB;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.075) inset;
+}
+
+.unswLinks a {
+    color: #FC0;
+    font-weight: bold;
+    border-right: #FC0 solid 1px;
+    padding-right: 7px;
+    padding-left: 5px;
+}
+
+.unswLinks .last {
+    border: none;
+}
+
+/* carousels */
+.carousel {
+    max-width: 1009px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+h5 {
+   font-style: italic;
+   color: #B7B7B7;
+}
+ 
+iframe {
+    max-width: 100%;
+}
+
+.wp-caption img, .wp-caption {
+    max-width: 100%;
+    height: auto;
+}
+.wp-caption {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 770px) {
+    
+    .banner {
+        /*  130px top banner + 10px border */
+        max-height: 140px;
+    }
+    
+    .navbar, .menu-item, .menu-item a {
+        max-height: 32px;
+/*         overflow: hidden; */
+    }
+    .nav > li, .nav  a, .navbar-brand {
+        text-decoration: none;
+        display: block;
+        min-height: 21px;
+    /*     padding: 7px 18px 8px 19px; */
+        border-right: 1px solid #444;
+    }
+    .nav > li, .nav  a, .navbar-brand, .navbar-brand img {
+        padding-top: 3px !important;
+    }
+    /* Might have to change this when we get the style guide.
+     * Only display the box on large screens
+     */
+    #main .container {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+        box-shadow: 2px 2px 10px 0px #888;
+    }
+    /*
+     * Logos look bad if we do this on mobile, so only do it for big screens
+     */
+    .UNSWLogo img {
+        border-right: 1px solid #000;
+        min-height: 72px;
+        padding-right: 20px;
+    }
+
+
+    #header img {
+        padding-top: 5px !important;
+    }
+
+
+    /*
+     * On desktop replace the home link with an image
+     */
+    #menu-menu-1 > li:first-child  {
+        background: transparent url("images/home.png") no-repeat scroll 5px 7px;
+        border-left: 1px solid #444;
+    }
+     #menu-menu-1 > li:first-child > a {
+        text-indent: -100px;
+        overflow: hidden;
+        /*padding: 0px;
+        width: 60px;*/
+        background: none;
+        border-left: 1px solid #444;
+    }
+
+
+    /*
+     * When we aren't on mobile center the menu
+     */
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+/*         text-align: center; */
+        padding-left: 0px;
+    }
+    
+   
+}
+
+@media (max-width: 720px) {
+    /*
+     * Make the banner line up
+     */
+    .banner {
+        text-align: center;
+    }
+    #header img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+     /*
+     * Center bottom nav
+     */
+    .unswLinks {
+        text-align: center;
+    }
+}
+
+
+/*
+ * Team Profiles
+ */
+@media (min-width: 720px) {
+    /* On Small Screens the photos look bad, so get rid of them */
+    .team-bios .even {
+        text-align: right;
+    }
+}
+
+.team-bios .row {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+/*     box-shadow: 0px 4px 2px -2px #CCC, 0px 0px 0px 0px #FFF, 0px 0px 0px 0px #FFF, 0px 0px 0px 0px #FFF; */
+}
+
+.team-bios { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*
+ * Banner Sponsorship
+ */
+
+#header .sponsors h3 {
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+#header .sponsors img { 
+    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 3vh !important; 
+} 
+
+#header .black, #header .black img  {
+    background-color: black;
+    padding-bottom: 0.5vh;
+}
+/*
+ * Possible sponsors code if in header
+ */
+/*.sponsors img {
+    max-height: 5vh !important;
+    padding-right: 11px;
+    opacity: 0.3;
+}*/
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+img.aligncenter, img.alignright, img.alignleft {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }

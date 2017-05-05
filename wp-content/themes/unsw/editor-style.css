@@ -1,0 +1,33 @@
+
+/*
+Theme Name: UNSW Bluesat
+Author: Harry J.E Day
+Author URI: http://bluesat.com.au
+Description: The UNSW Theme
+License: All Rights reserved UNSW Australia, and BLUEsat UNSW
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: unsw
+
+*/
+
+
+@font-face {
+    font-family: 'SommetBold';
+/*     src: url('fonts/SommetBold.eot'); /* IE9 Compat Modes */ 
+    src: url('fonts/SommetBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/SommetBold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/SommetBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+h1, h2, h3, h4 {
+    font-family: "SommetBold", Arial;
+}
+
+.wp-caption img, .wp-caption {
+    max-width: 100%;
+    height: auto;
+}
+.wp-caption {
+    text-align: center;
+    font-style: italic;
+}

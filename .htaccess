@@ -1,21 +1,17 @@
 
-RewriteOptions inherit
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
 
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^bluesat\.unsw\.edu\.au$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.bluesat\.unsw\.edu\.au$
-RewriteRule ^/?$ "http\:\/\/bluesat\.com\.au" [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^wiki$ "https\:\/\/bluesat\.atlassian\.net\/wiki\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^jira$ "https\:\/\/bluesat\.atlassian\.net\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^github$ "https\:\/\/github\.com\/bluesat" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^bitbucket$ "https\:\/\/bitbucket\.org\/bluesat" [R=301,L]
 

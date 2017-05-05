@@ -1,4 +1,0 @@
-// static9
-(function(){ if( window._genericStats && _genericStats.onsitestats && _genericStatsCustom && !_genericStatsCustom.osa_disable ) {  if( _genericStats.sitekeys ) _genericStats.sitekeys[ 100778934 ] = 'd86cf337b2d21fc6';   _genericStats.onsitestats();   if( !window.ossinterval ) {    window.ossinterval = setInterval( '_genericStats.onsitestats(1);', 300*1000 );    setTimeout( '_genericStats.onsitestats(1);', 60*1000 );    setTimeout( '_genericStats.onsitestats(1);', 120*1000 );    setTimeout( '_genericStats.onsitestats(1);', 180*1000 );    setTimeout( '_genericStats.onsitestats(1);', 240*1000 );    setTimeout( 'clearInterval( window.ossinterval );', 3660*1000 );  }}})();var NO_PINGY=1;
-// exit site owner
-var o_O

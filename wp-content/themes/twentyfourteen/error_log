@@ -1,0 +1,2 @@
+[25-Apr-2016 11:05:40 Australia/Sydney] PHP Fatal error:  Call to undefined function get_header() in /home/bluesatc/public_html/wp-content/themes/twentyfourteen/404.php on line 10
+[07-Oct-2016 23:59:48 Australia/Sydney] PHP Fatal error:  Call to undefined function get_header() in /home/bluesatc/public_html/wp-content/themes/twentyfourteen/404.php on line 10
